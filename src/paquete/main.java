@@ -9,7 +9,9 @@ public class main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		
+		Almacen c = new Almacen("Javier legua");
+
+        System.out.println(c.calcularEstanteria());
 	}
 
 }
