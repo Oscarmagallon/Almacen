@@ -48,7 +48,7 @@ public double calcularEstanteria() {
 	}
 	return precioTotal;
 }
-public void añadirProducto() {
+public void anadirProducto() {
 Azucaradas a = new Azucaradas("5", 4, 10, "Pepsi", 15, false);
 String codigo = a.getId();
 boolean uno = false;
@@ -58,6 +58,7 @@ for (Bebida[] bebidas : mEstanteria) {
 		if(bebida!=null && bebida.getId().equals(codigo)){
 			uno=true;
 			System.out.println("Lo tenemos");
+			return;
 		} 
 			
 		
@@ -68,7 +69,7 @@ if(uno==false) {
          for (int j = 0; j < mEstanteria.length; j++) {
              if (mEstanteria[i][j]==null) {
                  mEstanteria[i][j]=a;
-                 System.out.println("Producto añadido");
+                 System.out.println("Producto aï¿½adido");
                  dos=true;
                  break;
              }
